@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  lab1:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: "8080"
+    ports:
+      - "8080:8080"
